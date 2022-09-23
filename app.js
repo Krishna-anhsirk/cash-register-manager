@@ -8,8 +8,8 @@ const displayChange = document.querySelector(".display-change");
 const givenNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 function validateCash() {
-  //To hide the message
-  showMessage("");
+  //To reset message and the details
+  resetRegister();
   //Checking if bill amount is valid
   if (billAmount.value > 0) {
     //Checking if given cash is greater than bill
@@ -22,6 +22,15 @@ function validateCash() {
     }
   } else {
     showMessage("Enter valid bill amount!");
+  }
+}
+
+function resetRegister() {
+  showMessage("");
+  displayChange.innerText = "";
+  //To reset notes
+  for (let i = 0; i < notes.length; i++) {
+    notes[i].innerText = "";
   }
 }
 
