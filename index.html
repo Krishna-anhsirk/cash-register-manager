@@ -17,10 +17,12 @@
     <input type="text" name="bill-amount" id="bill-amount" />
     <label for="cash-given">Cash given:</label>
     <input type="text" name="cash-given" id="cash-given" />
-    <button>Check</button>
+    <button class="check-money">Check</button>
+    <p class="message"></p>
     <table>
       <caption>
-        Return Change
+        Return Change:
+        <span class="display-change"></span>
       </caption>
       <tr>
         <th>No of Notes</th>
@@ -34,13 +36,13 @@
       </tr>
       <tr>
         <th>Note</th>
-        <td class="notes">2000</td>
-        <td class="notes">500</td>
-        <td class="notes">100</td>
-        <td class="notes">20</td>
-        <td class="notes">10</td>
-        <td class="notes">5</td>
-        <td class="notes">1</td>
+        <td>2000</td>
+        <td>500</td>
+        <td>100</td>
+        <td>20</td>
+        <td>10</td>
+        <td>5</td>
+        <td>1</td>
       </tr>
     </table>
     <script src="app.js"></script>
