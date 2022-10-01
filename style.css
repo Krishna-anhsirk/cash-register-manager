@@ -16,7 +16,7 @@ body {
 
 .heading {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
@@ -36,13 +36,13 @@ body {
 }
 
 .container label {
-  margin: 0.5rem 0rem;
+  margin: 0.5rem auto;
 }
 
 .container input {
   padding: 0.75rem;
   width: 80%;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem auto;
 }
 
 .check-money {
@@ -51,5 +51,40 @@ body {
   width: 60%;
   background-color: var(--secondary-colour);
   color: var(--primary-colour);
-  margin-bottom: 1.2rem;
+  margin: 1.2rem auto;
+}
+
+.message {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+table {
+  margin: 0.5rem;
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 2px;
+  border: 1px solid black;
+}
+
+/* Footer  */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 45vw;
+}
+
+a,
+img,
+li {
+  display: inline;
+}
+
+img {
+  width: 40px;
+  padding: 1rem 0.2rem;
 }
